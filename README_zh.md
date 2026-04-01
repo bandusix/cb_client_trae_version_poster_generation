@@ -1,6 +1,22 @@
 # 卡皮AI搜索 Trae Auto Poster Generator (自动海报生成脚本)
 
+[English Version](README.md)
+
 这是一个用于快速生成包含图片网格、品牌 Icon、自适应排版主标题和 CTA（Call To Action）按钮的海报生成脚本。该脚本专门为了接口调用、批处理以及跨语言接入设计。
+
+## 🎨 预设主题色预览
+
+脚本支持随机选择或指定主题色，以下是 6 种内置的高级浅色渐变效果预览：
+
+| 红/粉色系 (`#FF6A7A`) | 浅蓝色系 (`#6A8BFF`) | 浅绿色系 (`#6AFF8B`) |
+| :---: | :---: | :---: |
+| <img src="docs_assets/preview_Red_Pink.png" width="300"> | <img src="docs_assets/preview_Light_Blue.png" width="300"> | <img src="docs_assets/preview_Light_Green.png" width="300"> |
+
+| 浅黄色系 (`#FFD16A`) | 浅紫色系 (`#B56AFF`) | 浅灰色系 (`#8A95A5`) |
+| :---: | :---: | :---: |
+| <img src="docs_assets/preview_Light_Yellow.png" width="300"> | <img src="docs_assets/preview_Light_Purple.png" width="300"> | <img src="docs_assets/preview_Light_Gray.png" width="300"> |
+
+---
 
 ## 🌟 核心特性
 - **高度自适应文字**：不论标题多长、语言为何种，代码会自动调整文字大小以适应画布，绝不超边或被截断。
@@ -50,10 +66,7 @@ python3 trae_poster_generator.py --json '{
     "main_text": "Top 10\nComedy\nMovies & TV\nShows",
     "cta_url": "assets/play_icon.png",
     "cta_text": "Watch Now",
-    "poster_urls": [
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg"
-    ],
+    "poster_urls": ["url1", "url2"],
     "output_path": "trae图片优化v9版本.png"
 }'
 ```
@@ -71,40 +84,10 @@ payload = {
     "main_text": "Top 10\nComedy\nMovies & TV\nShows",
     "cta_url": "assets/play_icon.png",
     "cta_text": "Watch Now",
-    "poster_urls": [
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg"
-    ],
+    "poster_urls": ["url1", "url2"],
     "output_path": "trae图片优化v9版本.png"
 }
 
 # 直接调用生成
 generate_poster(**payload)
-```
-
----
-
-## 完整实例素材 (现有 Demo 演示)
-这里是一份目前我们可以完美运行并生成海报的 `data.json` 实例：
-
-```json
-{
-    "icon_url": "https://capybaba.io/favicon-128x128.png",
-    "brand_text": "capybaba.io",
-    "main_text": "Top 10\nComedy\nMovies & TV\nShows",
-    "cta_url": "assets/play_icon.png",
-    "cta_text": "Watch Now",
-    "poster_urls": [
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/7F0jc75HrSkLVcvOXR2FXAIwuEv.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
-        "https://media.themoviedb.org/t/p/w220_and_h330_face/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg"
-    ],
-    "output_path": "trae图片优化v9版本.png"
-}
 ```

@@ -122,9 +122,21 @@ def generate_poster(icon_url, brand_text, main_text, cta_url, cta_text, poster_u
         ("#8A95A5", "#B0BAC5"), # 浅灰色
     ]
 
-    # 如果有指定 theme_color，尝试匹配（简单的通过字符串查找，如果需要更复杂的可以另写逻辑）
-    # 如果没有指定，则随机选择一个配色方案
-    selected_palette = random.choice(color_palettes)
+    selected_palette = None
+    if theme_color:
+        # 如果提供了 theme_color，在预设里查找匹配项
+        for palette in color_palettes:
+            if theme_color.upper() == palette[0].upper():
+                selected_palette = palette
+                break
+        # 如果找不到匹配的，直接用传入的颜色和稍浅的颜色作为备用
+        if not selected_palette:
+            selected_palette = (theme_color, theme_color)
+            
+    if not selected_palette:
+        # 每次生成随机选择一个配色方案
+        selected_palette = random.choice(color_palettes)
+        
     base_color, top_color = selected_palette
     
     # 1. 创建渐变背景
