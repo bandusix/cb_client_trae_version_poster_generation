@@ -1,0 +1,19 @@
+{
+    "icon_url": "https://capybaba.io/favicon-128x128.png",
+    "brand_text": "capybaba.io",
+    "main_text": "Top 10\\nComedy\\nMovies & TV\\nShows",
+    "cta_url": "assets/play_icon.png",
+    "cta_text": "Watch Now",
+    "poster_urls": [
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/7F0jc75HrSkLVcvOXR2FXAIwuEv.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+        "https://media.themoviedb.org/t/p/w220_and_h330_face/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg"
+    ],
+    "output_path": "manus图片优化v9版本.png"
+}
